@@ -3,18 +3,26 @@
 @import './variables';
 
 .contants{
-    flex-basis: 80%;
+    @include mq("tablet"){
+        flex-basis: 80%;
+    }
     background-color: #f7f8fe;
     &__wrapper{
-        width: 86%;
+        width: 100%;
         margin: 0 auto;
+        @include mq("tablet"){
+            width: 86%;
+        }
     }
     
     &__greetings{
         display: flex;
         font-weight: 500;
         font-size: 24px;
-        padding: 2.5rem 0 4.4rem;
+        padding: 2.5rem 0 4% 4.4rem;
+        @include mq("tablet"){
+            padding-left: 0;
+        }
         &--hello{
             display: flex;
         }
@@ -59,7 +67,7 @@
         }
         &-search{
             display: flex;
-            width: 13.5rem;
+            width: 18%;
             height: 2.4rem;
             background: #F9FBFF;
             border-radius: 0.6rem;
@@ -76,6 +84,7 @@
             &--input{
                 border: none;
                 color:#B5B7C0;
+                width: 100%;
 
             }
         }
@@ -86,16 +95,20 @@
         font-size: 14px;
         color:#292D32;
         width: 100%;
+        table-layout: fixed;
         & td{
             border-bottom: 1px solid #EEEEEE;
             height: 4.3rem;
             vertical-align: middle;
+            word-wrap: break-word;
         }
         & th{
             border-bottom: 1px solid #EEEEEE;
             height: 4.3rem;
             vertical-align: middle;
             color: #B5B7C0;
+            text-align: inherit;
+            word-wrap: break-word;
         
         }
         &-btn{

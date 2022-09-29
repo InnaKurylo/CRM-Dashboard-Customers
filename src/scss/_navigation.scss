@@ -3,7 +3,9 @@
 @import './variables';
 
 .nav{
-    flex-basis: 20%;
+    @include mq("tablet"){
+        flex-basis: 20%;
+    }
     min-width: 14.4rem;
     &__logo {
         padding-top: 2.25rem;
