@@ -12,6 +12,7 @@
     font-family: 'Poppins', sans-serif;
 }
 .wrapper{
+    min-width: 320px;
     @include mq("tablet"){
         display: flex;
     }
