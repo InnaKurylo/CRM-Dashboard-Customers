@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./dist/css/style.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <main class="wrapper">
+        <section class="nav">
+            <div class="nav__logo">
+                <div class="nav__logo--icon"><img src="./dist/img/logo.png"></div>
+                <div class="nav__logo--name">Dashboard <span class="version">v.01</span></div>
+            </div>
+            <ul class="nav__list">
+                <li class="nav__list--items">
+                    <div class="nav__list--item">
+                        <div class="nav__list--icon"><img src="./dist/img/key.png"></div>
+                        <div class="nav__list--menu">Dashboard</div>
+                    </div>
+                    <div>&rsaquo;</div>
+                </li>
+                <li class="nav__list--items">
+                    <div class="nav__list--item">
+                        <div class="nav__list--icon"><img src="./dist/img/3d.png"></div>
+                        <div class="nav__list--menu">Product</div>
+                    </div>
+                    <div>&rsaquo;</div>
+                </li>
+                <li class="nav__list--items active">
+                    <div class="nav__list--item">
+                        <div class="nav__list--icon"><img src="./dist/img/user.png"></div>
+                        <div class="nav__list--menu">Customers</div>
+                    </div>
+                    <div>&rsaquo;</div>
+                </li>
+                <li class="nav__list--items">
+                    <div class="nav__list--item">
+                        <div class="nav__list--icon"><img src="./dist/img/wallet.png"></div>
+                        <div class="nav__list--menu">Income</div>
+                    </div>
+                    <div>&rsaquo;</div>
+                </li>
+                <li class="nav__list--items">
+                    <div class="nav__list--item">
+                        <div class="nav__list--icon"><img src="./dist/img/discount.png"></div>
+                        <div class="nav__list--menu">Promote</div>
+                    </div>
+                    <div>&rsaquo;</div>
+                </li>
+                <li class="nav__list--items">
+                    <div class="nav__list--item">
+                        <div class="nav__list--icon"><img src="./dist/img/message.png"></div>
+                        <div class="nav__list--menu">Help</div>
+                    </div>
+                    <div>&rsaquo;</div>
+                </li>
+            </ul>
+            <div class="user">
+                <div class="user__photo">
+                    <img src="./dist/img/photo.png">
+                </div>
+                <div class="user-info">
+                    <div class="user-info__name">Evano</div>
+                    <div class="user-info__prof">Project Manager</div>
+                </div>
+            </div>
+        </section>
+        <section class="contants">
+            <div class="contants__wrapper">
+                <div class="contants__greetings">
+                    <div class="contants__greetings--hello">Hello Evano</div>
+                    <div class="contants__greetings--hand"> </div>
+                </div>
+                <div class="customers">
+                    <div class="customers__wrapper">
+                        <div class="customers__header">
+                            <div class="customers__header-title">
+                                <div class="customers__header-title--all">All Customers</div>
+                                <div class="customers__header-title--active">Active Members</div>
+                            </div>
+                            <div class="customers__header-search">
+                                <div class="customers__header-search--icon"><img src="./dist/img/search.png"></div>
+                                <input class="customers__header-search--input" type="text" value="Search">
+                            </div>
+                        </div>
+                        <table class="customers__members">
+                            <tr>
+                                <th>Customer Name</th>
+                                <th>Company</th>
+                                <th>Phone Number</th>
+                                <th>Email</th>
+                                <th>Country</th>
+                                <th>Status</th>
+                            </tr>
+                            <tr>
+                                <td>Jane Cooper</td>
+                                <td>Microsoft</td>
+                                <td>(225) 555-0118</td>
+                                <td>jane@microsoft.com</td>
+                                <td>United States</td>
+                                <td><input class="customers__members-btn customers__members-btn--active"
+                                        value="Active"></input></td>
+                            </tr>
+                            <tr>
+                                <td>Floyd Miles</td>
+                                <td>Yahoo</td>
+                                <td>(205) 555-0100</td>
+                                <td>floyd@yahoo.com</td>
+                                <td>Kiribati</td>
+                                <td><input class="customers__members-btn customers__members-btn--inactive"
+                                        value="Inactive"></input></td>
+                            </tr>
+                            <tr>
+                                <td>Ronald Richards</td>
+                                <td>Adobe</td>
+                                <td>(302) 555-0107</td>
+                                <td>ronald@adobe.com</td>
+                                <td>Israel</td>
+                                <td><input class="customers__members-btn customers__members-btn--inactive"
+                                        value="Inactive"></input></td>
+                            </tr>
+                            <tr>
+                                <td>Marvin McKinney</td>
+                                <td>Tesla</td>
+                                <td>(252) 555-0126</td>
+                                <td>marvin@tesla.com</td>
+                                <td>Iran</td>
+                                <td><input class="customers__members-btn customers__members-btn--active"
+                                        value="Active"></input></td>
+                            </tr>
+                            <tr>
+                                <td>Jerome Bell</td>
+                                <td>Google</td>
+                                <td>(629) 555-0129</td>
+                                <td>jerome@google.com</td>
+                                <td>Réunion</td>
+                                <td><input class="customers__members-btn customers__members-btn--active"
+                                        value="Active"></input></td>
+                            </tr>
+                            <tr>
+                                <td>Kathryn Murphy</td>
+                                <td>Microsoft</td>
+                                <td>(406) 555-0120</td>
+                                <td>kathryn@microsoft.com</td>
+                                <td>Curaçao</td>
+                                <td><input class="customers__members-btn customers__members-btn--active"
+                                        value="Active"></input></td>
+                            </tr>
+                            <tr>
+                                <td>Jacob Jones</td>
+                                <td>Yahoo</td>
+                                <td>(208) 555-0112</td>
+                                <td>jacob@yahoo.com</td>
+                                <td>Brazil</td>
+                                <td><input class="customers__members-btn customers__members-btn--active"
+                                        value="Active"></input></td>
+                            </tr>
+                            <tr>
+                                <td>Kristin Watson</td>
+                                <td>Facebook</td>
+                                <td>(704) 555-0127</td>
+                                <td>kristin@facebook.com</td>
+                                <td>Åland Islands</td>
+                                <td><input class="customers__members-btn customers__members-btn--inactive"
+                                        value="Inactive"></input></td>
+                            </tr>
+                        </table>
+                        <footer class="footer">
+                            <div class="footer__info">Showing data 1 to 8 of 256K entries</div>
+                            <ul class="footer__pages">
+                                <li class="footer__pages--item">&#8249;</li>
+                                <li class="footer__pages--item active-btn">1</li>
+                                <li class="footer__pages--item">2</li>
+                                <li class="footer__pages--item">3</li>
+                                <li class="footer__pages--item">4</li>
+                                <li class="footer__pages--points">&#183;&#183;&#183;</li>
+                                <li class="footer__pages--item">40</li>
+                                <li class="footer__pages--item">&#8250;</li>
+                            </ul>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <script src="dist/js/script-min.js"></script>
+</body>
+
+</html>

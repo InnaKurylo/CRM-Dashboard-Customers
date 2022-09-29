@@ -1,0 +1,1 @@
+let menu=document.querySelector(".nav__list"),footer=document.querySelector(".footer__pages"),activePage=document.querySelector(".active-btn"),activeMenu=document.querySelector(".active");menu.addEventListener("click",e=>{activeMenu.classList.toggle("active");const t=e.target.closest(".nav__list--items");t&&(t.classList.toggle("active"),activeMenu=t)});

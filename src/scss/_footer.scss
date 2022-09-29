@@ -1,0 +1,35 @@
+.footer {
+    padding: 2rem 0 2.5rem;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__info{
+        font-weight: 500;
+        font-size: 14px;
+        color: #B5B7C0;
+    }
+    &__pages{
+        font-weight: 500;
+        font-size: 12px;
+        color: #404B52;
+        display: flex;
+        & li {
+            margin-left: 0.75rem;
+        }
+        &--item{
+             width: 1.5rem;
+             height: 1.5rem;
+             background-color:  #EEEEEE;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+            }
+        &--points{
+            width: fit-content;
+            height: fit-content;
+            background-color: #ffff;
+            align-self: end;
+        }
+    }
+}
